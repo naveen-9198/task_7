@@ -1,0 +1,128 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 300px;
+}
+.top{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(45, 42, 42);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+.container{
+    width: 60vw;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.user{ /* username properties (styling)*/
+    color: blue;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(194, 223, 241);
+}
+.logo{
+    filter: invert(); /* invert the color of logo from black to white so that it would be visible */
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.box{
+    width: 50vh;
+    
+}
+.left{
+    padding: 20px;
+    display: flex;
+    height: 90vh;
+    width: 50vw;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.right{
+    padding: 40px;
+}
+.btn{
+    background-color: skyblue;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 20px; /* give the circular edges */
+}
+
+.headi h1 span{
+    color: blue;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+@media (min-width: 768px) and (max-width: 1024px){ /*tablet version*/
+    .logo{
+        font-size: 20px;
+    }
+    .user{
+        font-size: 14px;
+        }
+    .top{
+        width: 100%;
+    }
+    a{
+        font-size: 14px;
+    }
+    .headi{
+        font-size: 14px;
+    }
+    .para{
+        font-size: 14px;
+    }
+    .btn{
+        font-size: 18px;
+        padding: 18px;
+    }
+    .right{
+        padding: 0;
+    }
+   img{
+    width: 80%;
+   }
+}
+/* mobile view*/
+@media (max-width: 767px){
+    .container > *{
+       
+        display: none;
+    }
+    .top{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12vh;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
